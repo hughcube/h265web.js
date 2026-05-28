@@ -1,6 +1,6 @@
 {
   "name": "@hughcube/h265web.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Browser HEVC/H.265 software-decoded player. Fork of numberwolf/h265web.js with a buffered.end(0) IndexSizeError fix.",
   "keywords": [
     "hevc",
