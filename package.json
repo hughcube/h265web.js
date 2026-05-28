@@ -28,8 +28,10 @@
     "type": "git",
     "url": "git+https://github.com/hughcube/h265web.js.git"
   },
+  "main": "index.js",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "files": [
     "static/",
