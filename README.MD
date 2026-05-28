@@ -1,3 +1,24 @@
+<!-- ============================================================
+     Fork notice — this section is added by the @hughcube fork
+     and is NOT part of the upstream README.
+     ============================================================ -->
+
+> ### 📌 About this fork — `@hughcube/h265web.js`
+>
+> This repository is a **fork** of [numberwolf/h265web.js](https://github.com/numberwolf/h265web.js), the original work of **Chang Yanlong (Numberwolf)**. All credit for the player, decoder and wasm work goes to the original author.
+>
+> **Why this fork exists**: to publish a usable npm package (`@hughcube/h265web.js`) — the upstream npm release `h265web.js@2.2.2` is a 149-byte stub that does not ship the wasm files. This fork ships the full pre-built `static/` directory and is consumed via Vite's static-copy plugin in downstream projects.
+>
+> **Patch applied** (single, surgical):
+> - `static/h265web.js` — guard `videoTag.buffered.end(0)` with `buffered.length > 0` to avoid `IndexSizeError` when `onloadedmetadata` fires before any buffered range exists. See commit [`cdc4472`](https://github.com/hughcube/h265web.js/commit/cdc4472).
+>
+> **License**: unchanged. The original `CYL_Free-1.0` agreement applies. See `LICENSE-Free_EN.MD` / `LICENSE-Free_CN.MD`. All ownership rights remain with Chang Yanlong as stated in Part III of that license.
+>
+> **Upstream**: <https://github.com/numberwolf/h265web.js>
+> **This fork**: <https://github.com/hughcube/h265web.js> · [npm](https://www.npmjs.com/package/@hughcube/h265web.js)
+
+---
+
 # h265web.js - Browser HEVC/H.265 Playback SDK
 
 <p align="center">
