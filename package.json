@@ -1,0 +1,45 @@
+{
+  "name": "@hughcube/h265web.js",
+  "version": "1.0.0",
+  "description": "Browser HEVC/H.265 software-decoded player. Fork of numberwolf/h265web.js with a buffered.end(0) IndexSizeError fix.",
+  "keywords": [
+    "hevc",
+    "h265",
+    "player",
+    "video",
+    "wasm",
+    "decoder",
+    "mp4",
+    "hls",
+    "m3u8",
+    "mpegts",
+    "fmp4"
+  ],
+  "homepage": "https://github.com/hughcube/h265web.js#readme",
+  "bugs": {
+    "url": "https://github.com/hughcube/h265web.js/issues"
+  },
+  "license": "GPL-3.0",
+  "author": "hughcube (fork) <hugh.li0001@gmail.com>",
+  "contributors": [
+    "numberwolf - changyanlong <porschegt23@foxmail.com> (original author)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughcube/h265web.js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "static/",
+    "index.js",
+    "index.css",
+    "index.html",
+    "index-cn.html",
+    "README.MD",
+    "README_CN.MD",
+    "LICENSE-Free_CN.MD",
+    "LICENSE-Free_EN.MD"
+  ]
+}
