@@ -5,14 +5,14 @@
 
 > ### 📌 关于本 fork —— `@hughcube/h265web.js`
 >
-> 本仓库是 [numberwolf/h265web.js](https://github.com/numberwolf/h265web.js) 的 **fork**，原作者为 **常炎隆 (Numberwolf)**。播放器、解码器和 wasm 等核心工作版权归原作者所有。
+> 本仓库是 [上游仓库](https://github.com/numberwolf/h265web.js) 的 **fork**。播放器、解码器和 wasm 等核心工作版权归原仓库作者所有。
 >
 > **为什么 fork**：上游 npm 包 `h265web.js@2.2.2` 实际只有 149 字节 stub，不含 wasm 文件，无法直接使用。本 fork 发布 `@hughcube/h265web.js` 完整携带预编译 `static/` 目录，供下游项目通过 Vite 的 static-copy 插件接入。
 >
 > **唯一改动**：
 > - `static/h265web.js` —— 在调用 `videoTag.buffered.end(0)` 前加 `buffered.length > 0` 判空，避免 `onloadedmetadata` 触发瞬间无缓冲数据时抛 `IndexSizeError`。详见 commit [`cdc4472`](https://github.com/hughcube/h265web.js/commit/cdc4472)。
 >
-> **许可证**：不变。仍适用原作者的 `CYL_Free-1.0` 协议，详见 `LICENSE-Free_CN.MD` / `LICENSE-Free_EN.MD`。所有权利按该协议第三部分归常炎隆所有。
+> **许可证**：不变。仍适用 `CYL_Free-1.0` 协议，详见 `LICENSE-Free_CN.MD` / `LICENSE-Free_EN.MD`。所有权利按该协议第三部分归原仓库作者所有。
 >
 > **上游地址**：<https://github.com/numberwolf/h265web.js>
 > **本 fork**：<https://github.com/hughcube/h265web.js> · [npm](https://www.npmjs.com/package/@hughcube/h265web.js)
